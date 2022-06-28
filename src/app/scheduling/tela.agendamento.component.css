@@ -1,0 +1,15 @@
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+.btnEnviarAgendamento{
+    float: right;
+}
+.btnCancelarAgendamento{
+    float: right;
+}

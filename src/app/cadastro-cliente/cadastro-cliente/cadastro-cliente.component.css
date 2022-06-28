@@ -1,0 +1,15 @@
+.btnCliente{
+    float: right;
+    margin-top: 24px;
+}
+
+.card {
+    margin-top: 17px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    box-shadow: 1px 2px #ced4da;
+}
+
+.card-title{
+    font-weight: 500;
+}

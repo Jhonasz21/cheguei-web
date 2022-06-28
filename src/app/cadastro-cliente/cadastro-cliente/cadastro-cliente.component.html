@@ -1,0 +1,172 @@
+<div class="row">
+  <div class="card col-md-8 offset-2">
+    <div class="card-body">
+      <h1 class="card-title">Cadastro de Cliente</h1>
+
+      <form [formGroup]="cadastroClienteForm" (ngSubmit)="cadastrarCliente()">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Dados Pessoais</h3>
+
+            <div class="form-group mb-2">
+              <label for="nome">Nome: </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="nome"
+                placeholder="nome completo"
+              />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="nome">CPF: </label>
+              <input type="text" class="form-control" formControlName="cpf" />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="nome">Nascimento: </label>
+              <input
+                type="date"
+                class="form-control"
+                formControlName="nascimento"
+              />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="nome">Telefone: </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="telefone"
+                placeholder="(xx)xxxxxxxxx"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- <h2>Endereço</h2>: -->
+
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Endereço</h3>
+
+            <div class="form-group mb-2">
+              <label for="inputEstado">Estado:</label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="inputEstado"
+                placeholder=""
+                formControlName="estado"
+              />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="inputCidade">Cidade:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputCidade"
+                placeholder=""
+                formControlName="cidade"
+              />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="inputAddress">Endereço:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Exemplo: Rua, Avenida,  nº "
+                formControlName="logradouro"
+              />
+            </div>
+            <div class="form-group mb-2">
+              <label for="inputNumero">Numero:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputNumero"
+                placeholder="Numero da residência"
+                formControlName="numero"
+              />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="inputCEP">Complemento:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputComplemento"
+                formControlName="complemento"
+              />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="inputCEP">CEP:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputCEP"
+                formControlName="cep"
+              />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="nome">Ponto de Referência: </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="referencia"
+                placeholder="Exemplo: Comercio próximo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Dados de Login</h3>
+
+            <div class="form-group mb-2">
+              <label for="nome">Usuario: </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="usuario"
+                placeholder="insira usuario"
+              />
+            </div>
+
+            <div class="form-group mb-2">
+              <label for="nome">Senha: </label>
+              <input
+                type="password"
+                class="form-control"
+                formControlName="senha"
+                placeholder="Insira senha"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--botões-->
+        <div class="row">
+          <div class="col-md-3 offset-8">
+            <button class="btn btn-danger btnCliente" type="button" (click)="voltar()">
+              Cancelar
+            </button>
+          </div>
+
+          <div class="col-md-1">
+            <button type="submit" class="btn btn-primary btnCliente">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

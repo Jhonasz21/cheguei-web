@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="boxLogin col-sm-6 col-md-4 offset-4">
+            <h1 class="text-center login-title">Entrar no Cheguei</h1>
+            <div class="account-wall">
+                <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                    alt="">
+                <form class="form-signin" [formGroup]="loginForm" (ngSubmit)="logar()">
+                <input type="text" class="form-control" placeholder="Email" formControlName="usuario" required autofocus>
+                <input type="password" class="form-control" placeholder="Senha"  formControlName="senha" required>
+                <button class="col-md-4 btn btn-lg btn-primary btn-block offset-8" type="submit">
+                    Entrar</button>
+               
+                </form>
+            </div>
+            <a routerLink="/cadastroCliente" class="text-center new-account">Cadastre-se </a>
+        </div>
+    </div>
+</div>

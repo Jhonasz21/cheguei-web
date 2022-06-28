@@ -1,0 +1,41 @@
+
+<mat-sidenav-container class="container" style="
+margin: 0 0 0 0;
+padding: 0 0 0 0; position: inherit;
+">
+
+    <!-- MENU no corpo da página -->
+
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64" style="position:absolute; bottom: -301px !important">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/" >
+                <i class="material-icons">home</i>Inicio
+            </a>
+            <a mat-list-item routerLink="telaAgendamento" >
+                <i class="material-icons">calendar_month</i>Agendar retirada de pacote
+            </a>
+            <a mat-list-item (click)="goToAndamento()">
+                <i class="material-icons">storefront</i> Agendamentos em andamento
+            </a>
+            <a mat-list-item (click)="goToConcluido()">
+                <i class="material-icons">storefront</i> Agendamentos concluídos
+            </a>
+            <a mat-list-item routerLink="products">
+                <i class="material-icons">storefront</i> Retirada
+            </a>
+           
+            <a mat-list-item routerLink="quemSomos" >
+                <i class="material-icons">face</i>Quem Somos
+            </a>
+            
+            <a mat-list-item (click)="sair()">
+                <i class="material-icons" >power_settings_new</i>Sair
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>    
+
+    <mat-sidenav-content class="content" style="overflow-y:hidden">
+        <router-outlet></router-outlet> <!--Router das telas-->
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>

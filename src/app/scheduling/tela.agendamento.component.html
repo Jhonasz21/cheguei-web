@@ -1,0 +1,85 @@
+<div class="row">
+  <div class="card col-md-10 offset-2">
+    <div class="card-body">
+      <h1 class="card-title">Agendar a retirada do seu pacote</h1>
+
+      <form [formGroup]="agendamentoForm" (ngSubmit)="agendar()">
+        <div>
+          <!-- input tipo data, para o cliente escolher data desejada-->
+          <label for="retirada"
+            >Escolha data e hora </label
+          >
+          <input
+            type="datetime-local"
+            id="retirada"
+            name="retirada"
+            min="2022-06-25"
+            max="2022-07-09"
+            formControlName="data"
+          />
+        </div>
+
+        <!--teste-->
+        <!--Importando Script Jquery-->
+        <!-- <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+        ></script> -->
+
+        <!--Formulário-->
+        <!-- <form> -->
+        <label for="cep">CEP:</label>
+        <input
+          id="cep"
+          type="text"
+          class="form-control"
+          formControlName="cep"
+          required
+        />
+
+        <label for="logradouro">Logradouro:</label>
+        <input
+          id="logradouro"
+          type="text"
+          class="form-control"
+          formControlName="logradouro"
+          required
+        />
+
+        <label for="numero">Número:</label>
+        <input id="numero" type="text" formControlName="numero" />
+
+        <label for="complemento">Complemento:</label>
+        <input id="complemento" type="text" formControlName="complemento" />
+
+        <label for="bairro">Bairro:</label>
+        <input id="bairro" type="text" required formControlName="bairro" />
+        <!-- </form> -->
+
+        <label for="retirada">Obrsevação:</label>
+        <textarea
+          name="comentario"
+          id="com"
+          cols="60"
+          rows="08"
+          formControlName="observacao"
+        ></textarea>
+        <!-- <script type="text/javascript"></script> -->
+
+        <div class="row">
+          <div class="col-md-3 offset-8">
+            <button class="btn btn-danger btnCancelarAgendamento">
+              Cancelar
+            </button>
+          </div>
+
+          <div class="col-md-1">
+            <button type="submit" class="btn btn-primary btnEnviarAgendamento">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+      background-image: url("../../../../assets/caminhao.png") !important;
+    background-repeat: repeat-x;
+    background-size: 10%;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+#logo {
+    display: flex;
+    height: 9vh;
+}
+
+.title-group {
+    padding-left: 25px;
+    padding-right: 5px;
+}
+

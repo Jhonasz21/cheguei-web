@@ -1,0 +1,18 @@
+.sidenav {
+    background-image: linear-gradient(rgba(212, 11, 11, 0.89), rgb(182, 110, 17), rgb(15, 1, 1));
+    width: 200px;
+    height: 875px;
+}
+
+.sidenav a {
+    color: rgb(28, 28, 31);
+}
+
+.sidenav i {
+    padding-right: 10px;
+}
+
+.content {
+    padding: 17px;
+    background-color: rgb(255, 255, 255);
+}
