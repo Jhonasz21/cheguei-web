@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
       localStorage.setItem('taLogado', "true");
       localStorage.setItem("cpf", this.loginResponse.cliente.cpf)
 
-      window.location.href="/products"
+      this.router.navigate(['/products'])
     },
     (error) => {
       let text =  "Usuário ou senha inválido";
