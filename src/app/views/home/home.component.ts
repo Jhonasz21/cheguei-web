@@ -29,6 +29,7 @@ export class HomeComponent implements OnInit {
 
     this.login.usuario = this.loginForm.value.usuario;
     this.login.senha = this.loginForm.value.senha;
+    console.log("logar")
 
 
     this.homeService.logar(this.login).subscribe((resposta) => {
@@ -37,8 +38,8 @@ export class HomeComponent implements OnInit {
      
       localStorage.setItem('taLogado', "true");
       localStorage.setItem("cpf", this.loginResponse.cliente.cpf)
+      window.location.href="/products"
 
-      this.router.navigate(['/products'])
     },
     (error) => {
       let text =  "Usuário ou senha inválido";
